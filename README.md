@@ -10,4 +10,4 @@ Here are some images of the homepage in desktop version
 
 And here, in mobile version
 
-![1](./design/my-solution-desktop.png)
+![1](./design/my-solution-mobile.png)
