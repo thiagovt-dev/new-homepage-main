@@ -6,8 +6,8 @@ For my solution I used css grid styles and javascript. I also used media queries
 
 Here are some images of the homepage in desktop version
 
-![](./design/my-solution-desktop.png)
+![desktop version](./design/my-solution-desktop.png)
 
 And here, in mobile version
 
-![](./design/my-solution-mobile.png)
+![mobile version](./design/my-solution-mobile.png)
