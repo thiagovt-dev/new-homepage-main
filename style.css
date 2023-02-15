@@ -1,0 +1,269 @@
+:root{
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    max-width: 80em; 
+    min-height: 100vh;
+    font-size: 0.9375em; /* 15px in em */
+    color: var(--Dark-grayish-blue);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    transition: all 0.5 ease;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em ;
+    margin: 0 auto;    
+}
+
+.overlay-content {
+    display: flex;
+    list-style: none;
+    
+}
+.overlay-content a{
+    display: flex;
+    padding: 2em;
+    color: var(--Dark-grayish-blue);
+}
+.overlay-content a:hover{
+  color: var(--Soft-red);
+}
+
+.navbtn{
+  display: none;
+  cursor: pointer;  
+}
+
+.closebtn{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    right: -80%;
+    margin: 2.67em auto;
+    padding: 0 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); ;
+    gap: 1.67em;
+    justify-content: center;
+
+  }
+  .grid-item1 {
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    
+  }
+  .grid-item1 img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .grid-item2 {
+    grid-column: 3;
+    grid-row: 1/ span 2;
+    background-color: var(--Very-dark-blue);
+  }
+  .grid2-text{
+    margin: 1.33em;
+    padding: 1.33em;
+
+  }
+  .grid2-text h1{
+    color: var(--Soft-orange);
+    font-weight: 800;
+    font-size: 3em;
+  }
+  .grid2-text p{
+    color: var(--Grayish-blue);
+  }
+  
+  .grid2-text h2{
+    margin-top: 1.2em;
+    color: var(--Off-white);
+  }
+  
+  .grid2-text a h2:hover{
+    color: var(--Soft-orange);
+  }
+  
+  hr{
+    margin-top: 2em;
+    border-color: var(--Grayish-blue);
+  }
+  
+  .grid-item3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .grid-item3 h1{
+    font-size: 4em;
+    color: var(--Very-dark-blue);
+    padding-right: 0.67em;
+    
+  }
+  .grid-item4{
+    grid-column: 2;
+    grid-row: 2;
+    padding-right: 2.67em;
+    
+    
+  }
+
+  .grid-item4 button{
+    padding: 0.67em 1.33em;
+    margin-top: 3.67em;
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    border: none;
+    width: 13.33em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;   
+  }
+  .grid-item4 button:hover{
+    background-color: var(--Very-dark-blue);
+
+  }
+
+  .card{
+    display: flex;
+    align-items: center;
+    gap: 1.33em;
+    margin: 2em 0;
+  }
+  
+  .card img{
+    width: 9.33em;
+    height: 9.33em;
+    object-fit: cover;
+  }
+  
+  .card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .card a h3:hover{
+    color: var(--Soft-red);
+  }
+  
+  .card-text h3,p{
+    margin-top: 0.67em;
+  }
+  
+  .card-text h3{
+    color: var(--Very-dark-blue);
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media screen and (max-width: 1024px) {
+    body{
+      width: 100%;
+      height: auto;
+      filter: blur(0);
+      overflow-y: scroll;
+      padding: 0 0.6em;
+    }
+    .nav-bkg{
+      background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .overlay{
+      max-width:16.7em;
+      width: 0;
+      height: 100%;
+      background-color: var(--Off-white);
+      border: 1px solid rgba(0, 0, 0, 0.113);
+      z-index: 99999;
+      position: fixed;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      transition: all 0.5s ease-in-out;
+      
+
+      }
+    .closebtn, .navbtn{
+    display: block;
+    }
+    .overlay-content{
+      flex-direction: column;
+    }
+    .hide {
+    display: none;
+    }
+    
+    
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+    .grid-item1 {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+    .grid-item2 {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .grid-item3 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .grid-item3 h1{
+      padding: 0;
+    }
+    .grid-item4{
+      grid-column: 1;
+      grid-row: 3;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .closebtn, .navbtn {
+      display: block;
+    }
+
+  }
+  
+  
+
+  
