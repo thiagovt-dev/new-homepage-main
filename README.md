@@ -6,7 +6,7 @@ For my solution I used css grid styles and javascript. I also used media queries
 
 Here are some images of the homepage in desktop version
 
-<img src="assents/desing/my-solution-desktop.png">
+<![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
 And here, in mobile version
 
