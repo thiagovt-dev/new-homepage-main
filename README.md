@@ -6,8 +6,8 @@ For my solution I used css grid styles and javascript. I also used media queries
 
 Here are some images of the homepage in desktop version
 
-<![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
+![0](./design/my-solution-desktop.png)
 
 And here, in mobile version
 
-<img src="assents/desing/my-solution-mobile.png">
+![1](./design/my-solution-desktop.png)
